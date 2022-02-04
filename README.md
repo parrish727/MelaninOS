@@ -19,11 +19,11 @@ The MelaninOS supports a communication layer offering:
 
 
 Building/Running MelaninOS
-Clone this repository.
-Navigate to the location that you cloned this repository to.
-Ensure you have installed the following:
-cURL
-QEMU
-Run the bootstrap script (./bootstrap.sh)
-Compile the kernel with "cargo build --release", or run the kernel in QEMU, using "cargo run --release".
+- Clone this repository.
+- Navigate to the location that you cloned this repository to.
+- Ensure you have installed the following:
+-   cURL
+-   QEMU
+- Run the bootstrap script (./bootstrap.sh)
+- Compile the kernel with "cargo build --release", or run the kernel in QEMU, using "cargo run --release".
 
