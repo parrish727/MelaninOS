@@ -1,8 +1,8 @@
-![LibertyOS Logo](https://raw.githubusercontent.com/LibertyOS-Development/kernel/main/resources/images/bmp/Logo-Dark.bmp)
+![MelaninOS Logo]()
 
-This is the official repository of the LibertyOS kernel. LibertyOS is an operating system, built with Rust, that is open-source, free-to-use, and open to new contributors. Everything in LOS is, or will be, built from scratch. Currently, LOS supports x86_64 systems, and can be booted on real hardware, using a simple bootloader. This operating system is being worked on continuously, and all changes are logged in the VERSIONHISTORY.md file (in the root directory of this repository). If you want to see a more detailed explanation of changes between versions, you can read the commits on the GitHub repository.
+This is the official repository of the MelaninOS kernel. MelaninOS is an operating system, built with Rust, that is open-source, free-to-use, and open to new contributors. Everything in LOS is, or will be, built from scratch. Currently, LOS supports x86_64 systems, and can be booted on real hardware, using a simple bootloader. This operating system is being worked on continuously, and all changes are logged in the VERSIONHISTORY.md file (in the root directory of this repository). If you want to see a more detailed explanation of changes between versions, you can read the commits on the GitHub repository.
 
-## Building/Running LibertyOS
+## Building/Running MelaninOS
 1. Clone this repository.
 2. Navigate to the location that you cloned this repository to.
 3. Ensure you have installed the following:
@@ -21,7 +21,7 @@ This is the official repository of the LibertyOS kernel. LibertyOS is an operati
  - Support for several keyboard layouts
  - Basic support for asynchronous functions, including a basic task-executor
  - Support for reading/writing to filesystems (support for specific filesystems has yet to be implemented, but the foundations have been implemented already)
- - Uses a core library, built for LibertyOS (libcore)
+ - Uses a core library, built for MelaninOS (libcore)
  - Supports mathematical calculations, including basic algebra, geometry, etc.
  - Support for C-types
  - Basic support for parsing fonts
@@ -33,7 +33,7 @@ This is the official repository of the LibertyOS kernel. LibertyOS is an operati
 
 
 #### WIP FEATURES
- - A basic filesystem, built for LibertyOS
+ - A basic filesystem, built for MelaninOS
  - Full documentation for the entire kernel
  - Full support for reading/writing to FAT filesystems
  - Basic networking capabilities
@@ -54,6 +54,6 @@ This is the official repository of the LibertyOS kernel. LibertyOS is an operati
  - Basic customization
 
 #### CURRENTLY EXPECTED BEHAVIOUR
- - The kernel initializes the critical portions of LibertyOS
+ - The kernel initializes the critical portions of MelaninOS
  - The kernel displays a message about the setup process
  - The kernel encounters a page-fault. :(
