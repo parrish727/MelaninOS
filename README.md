@@ -1,6 +1,6 @@
 ![MelaninOS Logo]()
 
-This is the official repository of the MelaninOS kernel. MelaninOS is an operating system, built with Rust, that is open-source, free-to-use, and open to new contributors. Everything in LOS is, or will be, built from scratch. Currently, LOS supports x86_64 systems, and can be booted on real hardware, using a simple bootloader. This operating system is being worked on continuously, and all changes are logged in the VERSIONHISTORY.md file (in the root directory of this repository). If you want to see a more detailed explanation of changes between versions, you can read the commits on the GitHub repository.
+This is the official repository of the MelaninOS kernel. MelaninOS is an operating system, built with Rust, that is open-source, free-to-use, and open to new contributors. Everything in MOS is, or will be, built from scratch. Currently, MOS supports x86_64 systems, and can be booted on real hardware, using a simple bootloader. This operating system is being worked on continuously, and all changes are logged in the VERSIONHISTORY.md file (in the root directory of this repository). If you want to see a more detailed explanation of changes between versions, you can read the commits on the GitHub repository.
 
 ## Building/Running MelaninOS
 1. Clone this repository.
@@ -17,7 +17,7 @@ This is the official repository of the MelaninOS kernel. MelaninOS is an operati
  - Support for Rust's core and alloc crates
  - Memory allocation, using linked-lists, buddy-allocation, and bump-allocation
  - Basic error-handling
- - Built-in support for running LOS with QEMU
+ - Built-in support for running MOS with QEMU
  - Support for several keyboard layouts
  - Basic support for asynchronous functions, including a basic task-executor
  - Support for reading/writing to filesystems (support for specific filesystems has yet to be implemented, but the foundations have been implemented already)
