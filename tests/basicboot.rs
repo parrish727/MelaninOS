@@ -1,7 +1,7 @@
 #![no_std]
 #![no_main]
 #![feature(custom_test_frameworks)]
-#![test_runner(libertyos_kernel::testexec)]
+#![test_runner(melaninos_kernel::testexec)]
 #![reexport_test_harness_main = "testmain"]
 
 use core::panic::PanicInfo;
@@ -22,11 +22,11 @@ pub extern "C" fn _start() -> !
 #[panic_handler]
 fn panic(info: &PanicInfo) -> !
 {
-	libertyos_kernel::test_panic_handler(info)
+	melaninos_kernel::test_panic_handler(info)
 }
 
 
-use libertyos_kernel::println;
+use melaninos_kernel::println;
 #[test_case]
 fn test_println()
 {

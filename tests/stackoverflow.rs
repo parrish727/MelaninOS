@@ -4,7 +4,7 @@
 
 use core::panic::PanicInfo;
 use lazy_static::lazy_static;
-use libertyos_kernel::{exitqemu, QEMUExitCode, serprint, serprintln};
+use melaninos_kernel::{exitqemu, QEMUExitCode, serprint, serprintln};
 use x86_64::structures::idt::{InterruptDescriptorTable, InterruptStackFrame};
 
 lazy_static!
@@ -16,7 +16,7 @@ lazy_static!
 		{
 			idt.double_fault
 				.set_handler_fn(test_double_fault_handler)
-				.set_stack_index(libertyos_kernel::gdt::DOUBLEFAULT_IST_IDX);
+				.set_stack_index(melaninos_kernel::gdt::DOUBLEFAULT_IST_IDX);
 		}
 		idt
 	};
@@ -39,7 +39,7 @@ extern "x86-interrupt" fn test_double_fault_handler(_stackframe: InterruptStackF
 pub extern "C" fn _start() -> !
 {
 	serprint!("STACKOVERFLOW::STACK_OVERFLOW...\t");
-	libertyos_kernel::gdt::init();
+	melaninos_kernel::gdt::init();
 	init_test_idt();
 	stackoverflow();
 	panic!("[MSG] EXEC CONTINUED AFTER STACK OVERFLOW");
@@ -55,5 +55,5 @@ fn stackoverflow()
 #[panic_handler]
 fn panic(info: &PanicInfo) -> !
 {
-	libertyos_kernel::test_panic_handler(info)
+	melaninos_kernel::test_panic_handler(info)
 }

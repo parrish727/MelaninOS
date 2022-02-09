@@ -1,4 +1,4 @@
-// LIBERTYOS: src/vgabuff.rs
+// MelaninOS: src/vgabuff.rs
 //
 // This module provides the ability for the kernel to write text to the VGA text-buffer,
 // use colored text, provide required features for various macros to function correctly, print lines, create lines, etc.

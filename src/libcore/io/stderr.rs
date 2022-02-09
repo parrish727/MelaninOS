@@ -1,6 +1,6 @@
 // src/libcore/io/stderr.rs
 //
-// The stderr struct for the LibertyOS kernel.
+// The stderr struct for the MelaninOS kernel.
 
 
 // The Stderr struct

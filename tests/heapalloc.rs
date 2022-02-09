@@ -1,7 +1,7 @@
 #![no_std]
 #![no_main]
 #![feature(custom_test_frameworks)]
-#![test_runner(libertyos_kernel::testexec)]
+#![test_runner(melaninos_kernel::testexec)]
 #![reexport_test_harness_main = "testexec"]
 
 extern crate alloc;
@@ -9,17 +9,17 @@ extern crate alloc;
 use alloc::{boxed::Box, vec::Vec};
 use bootloader::{entry_point, BootInfo};
 use core::panic::PanicInfo;
-use libertyos_kernel::allocator::HEAP_SIZE;
+use melaninos_kernel::allocator::HEAP_SIZE;
 
 entry_point!(main);
 
 fn main(boot_info: &'static BootInfo) -> !
 {
-	use libertyos_kernel::allocator;
-	use libertyos_kernel::mem::{self, BootInfoFrameAllocator};
+	use melaninos_kernel::allocator;
+	use melaninos_kernel::mem::{self, BootInfoFrameAllocator};
 	use x86_64::VirtAddr;
 
-	libertyos_kernel::init();
+	melaninos_kernel::init();
 	let physical_memory_offset = VirtAddr::new(boot_info.physical_memory_offset);
 	let mut mapper = unsafe
 	{
@@ -73,5 +73,5 @@ fn manyboxes()
 #[panic_handler]
 fn panic(info: &PanicInfo) -> !
 {
-	libertyos_kernel::test_panic_handler(info)
+	melaninos_kernel::test_panic_handler(info)
 }

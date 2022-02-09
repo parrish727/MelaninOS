@@ -1,6 +1,6 @@
 // src/allocator/lnls.rs
 //
-// Linked-list allocator for LibertyOS.
+// Linked-list allocator for MelaninS.
 
 use crate::libcore::allocator::{alignup, Locked};
 use alloc::alloc::{GlobalAlloc, Layout};

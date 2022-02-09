@@ -1,13 +1,13 @@
 [package]
 authors = ["Daniel P. Teberian"]
 categories = ["embedded", "no-std"]
-description = "The kernel for LibertyOS."
+description = "The kernel for MelaninOS."
 edition = "2018"
 license = "Apache-2.0"
-keywords = ["no-std", "liberty", "libertyos", "os", "kernel"]
-name = "libertyos_kernel"
+keywords = ["no-std", "melanin", "melaninos", "os", "kernel"]
+name = "melaninos_kernel"
 readme = "README.md"
-repository = "https://github.com/LibertyOS-Development/kernel"
+repository = "https://github.com/MelaninOS-Development/kernel"
 version = "0.15.7"
 
 [dependencies]

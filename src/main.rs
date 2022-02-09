@@ -3,7 +3,7 @@
 #![feature(abi_efiapi)]
 #![feature(custom_test_frameworks)]
 #![feature(type_ascription)]
-#![test_runner(libertyos_kernel::testexec)]
+#![test_runner(melaninos_kernel::testexec)]
 #![reexport_test_harness_main = "testexec"]
 #![allow(dead_code)]
 #![allow(deprecated)]
@@ -19,7 +19,7 @@ use alloc::{boxed::Box, vec, vec::Vec, rc::Rc};
 use bootloader::{BootInfo, entry_point};
 use core::panic::PanicInfo;
 use embedded_graphics::{image::Image, prelude::*};
-use libertyos_kernel::{print, println, libcore::task::{Task, kbd, simpexec::SimpleExec, exec::Exec}, time::sleep};
+use melaninos_kernel::{print, println, libcore::task::{Task, kbd, simpexec::SimpleExec, exec::Exec}, time::sleep};
 use tinybmp::DynamicBmp;
 use vga::{ colors::{ Color16, TextModeColor }, writers::{ Graphics640x480x16, GraphicsWriter, ScreenCharacter, TextWriter, Text80x25} };
 
@@ -30,23 +30,23 @@ pub const KSIZE: usize = 2 << 20;
 
 fn kernel_main(bootinfo: &'static BootInfo) -> !
 {
-	libertyos_kernel::init::start(bootinfo);
-	println!("LIBERTYOS v0.15.7");
+	melaninos_kernel::init::start(bootinfo);
+	println!("MELANINOS v0.15.7");
 	print!("\x1b[?25h");
 	println!();
 
 	loop
 	{
-		let prompt = libertyos_kernel::libcore::user::shell::promptstr(true);
+		let prompt = melaninos_kernel::libcore::user::shell::promptstr(true);
 		println!("{}", prompt);
 	}
 }
-//	libertyos_kernel::libcore::user::shell::main(&["shell"]);
+//	melaninos_kernel::libcore::user::shell::main(&["shell"]);
 /*
-	use libertyos_kernel::mem::{self, BootInfoFrameAllocator};
-	use libertyos_kernel::libcore::allocator;
+	use melaninos_kernel::mem::{self, BootInfoFrameAllocator};
+	use melaninos_kernel::libcore::allocator;
 	use x86_64::{structures::paging::Page, VirtAddr};
-	libertyos_kernel::init();
+	melaninos_kernel::init();
 
 	let physmem_offset = VirtAddr::new(bootinfo.physical_memory_offset);
 	let mut mapper = unsafe
@@ -59,7 +59,7 @@ fn kernel_main(bootinfo: &'static BootInfo) -> !
 	};
 
 	let page = Page::containing_address(VirtAddr::new(0xdeadbeaf000));
-	libertyos_kernel::mem::new_example_mapping(page, &mut mapper, &mut framealloc);
+	melaninos_kernel::mem::new_example_mapping(page, &mut mapper, &mut framealloc);
 
 	let page_ptr: *mut u64 = page.start_address().as_mut_ptr();
 
@@ -74,10 +74,10 @@ fn kernel_main(bootinfo: &'static BootInfo) -> !
 
 
 //	let mut executor = Exec::new();
-//	let prompt = libertyos_kernel::libcore::user::shell::promptstr(true);
+//	let prompt = melaninos_kernel::libcore::user::shell::promptstr(true);
 
 	// Welcome message
-	println!("LIBERTYOS v0.15.2");
+	println!("melaninOS v0.15.2");
 	println!("");
 	print!("\x1b[?25h");
 //	print!("{}", prompt);
@@ -93,7 +93,7 @@ fn kernel_main(bootinfo: &'static BootInfo) -> !
 
 pub fn shell()
 {
-	libertyos_kernel::libcore::user::shell::main(&["shell"]);
+	melaninos_kernel::libcore::user::shell::main(&["shell"]);
 }
 
 
@@ -115,7 +115,7 @@ pub fn alloc_err_handler(layout: alloc::alloc::Layout) -> !
 fn panic(info: &PanicInfo) -> !
 {
 	println!("{}", info);
-	libertyos_kernel::hltloop();
+	melaninos_kernel::hltloop();
 }
 
 
@@ -128,7 +128,7 @@ fn panic(info: &PanicInfo) -> !
 #[panic_handler]
 fn panic(info: &PanicInfo) -> !
 {
-	libertyos_kernel::test_panic_handler(info)
+	melaninos_kernel::test_panic_handler(info)
 }
 
 

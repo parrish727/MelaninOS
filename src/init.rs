@@ -16,7 +16,7 @@ pub fn start(bootinfo: &'static BootInfo)
 {
 	/*	INITIALIZATION PROCESS
 
-	LibertyOS has a simple initialization process. One by one, the
+	MelaninOS has a simple initialization process. One by one, the
 	critical functions (needed by the kernel) are initialized, with
 	the order of initialization being dependent on required features
 	for each component, respectively.
@@ -82,12 +82,12 @@ pub fn start(bootinfo: &'static BootInfo)
 	crate::libcore::fs::ata::init();
 
 /*
-	// Create LibertyOS installation
+	// Create MelaninOS installation
 	let csicolor = crate::libcore::sys::console::Style::color("Blue");
 	let csireset = crate::libcore::sys::console::Style::reset();
 	println!();
 
-	print!("\nWould you like to create a new installation of LibertyOS? [Y/N]");
+	print!("\nWould you like to create a new installation of MelaninOS? [Y/N]");
 	if crate::libcore::io::stdin::Stdin.readln().trim() == "y"
 	{
 		println!("you entered y");

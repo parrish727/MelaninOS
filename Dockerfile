@@ -1,4 +1,4 @@
-# podman build -t los:latest -f Dockerfile .
+# podman build -t mos:latest -f Dockerfile .
 
 #FROM rust:1.57-alpine
 FROM rust:alpine
@@ -18,5 +18,5 @@ COPY . .
 RUN cargo install --debug --root /usr/local --path .
 
 # A container must be created before extracting the kernel.
-# los=$(podman create --name mylos los:latest)
-# podman cp $los:/usr/local/bin/libertyos_kernel .
+# mos=$(podman create --name mylos los:latest)
+# podman cp $los:/usr/local/bin/melaninos_kernel .

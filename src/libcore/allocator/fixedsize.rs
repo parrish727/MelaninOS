@@ -1,6 +1,6 @@
 // src/allocator/fixedsize.rs
 //
-// Fixed-size allocation for LibertyOS.
+// Fixed-size allocation for MelaninOS.
 
 use crate::libcore::allocator::Locked;
 use alloc::alloc::{GlobalAlloc, Layout};

@@ -1,6 +1,6 @@
 // src/libcore/sys/log.rs
 //
-// Logger for the LibertyOS kernel.
+// Logger for the MelaninOS kernel.
 
 /*
 	IMPORTS

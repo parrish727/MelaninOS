@@ -3,7 +3,7 @@ name: Bug report
 about: Report bugs or other unexpected behavior
 title: "[BUG]"
 labels: bug
-assignees: 'danielteberian'
+
 
 ---
 

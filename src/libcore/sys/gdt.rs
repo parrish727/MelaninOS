@@ -1,6 +1,6 @@
 // src/gdt.rs
 //
-// Global descriptor table (GDT) functionality for the LibertyOS kernel.
+// Global descriptor table (GDT) functionality for the MelaninOS kernel.
 
 
 #![allow(deprecated)]

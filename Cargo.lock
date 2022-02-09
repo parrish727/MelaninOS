@@ -242,7 +242,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "libertyos_kernel"
+name = "melaninos_kernel"
 version = "0.15.7"
 dependencies = [
  "acpi",

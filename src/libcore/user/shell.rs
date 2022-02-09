@@ -1,6 +1,6 @@
 // src/libcore/user/shell.rs
 //
-// This is the builtin shell for LibertyOS.
+// This is the builtin shell for MelaninOS.
 
 #![allow(non_camel_case_types)]
 

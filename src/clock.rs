@@ -1,6 +1,6 @@
 // clock.rs
 //
-// Basic implementation of time-keeping for the LibertyOS kernel.
+// Basic implementation of time-keeping for the MelaninOS kernel.
 
 /*
 	IMPORTS

@@ -2,7 +2,7 @@
 #![no_main]
 
 use core::panic::PanicInfo;
-use libertyos_kernel::{exitqemu, serprint, serprintln, QEMUExitCode};
+use melaninos_kernel::{exitqemu, serprint, serprintln, QEMUExitCode};
 
 #[no_mangle]
 pub extern "C" fn _start() -> !

@@ -1,6 +1,6 @@
 // src/arch/x64/mod.rs
 //
-// This is the mod.rs file for the x64 (64-bit) arch support for LibertyOS.
+// This is the mod.rs file for the x64 (64-bit) arch support for MelaninOS.
 
 pub mod address;
 pub mod instructions;

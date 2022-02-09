@@ -1,4 +1,4 @@
-# Layout of the LibertyOS kernel
+# Layout of the MelaninOS kernel
 
 ## /src
  - clock.rs: Implements basic functions for calculating real-time, up-time, and how to format dates.

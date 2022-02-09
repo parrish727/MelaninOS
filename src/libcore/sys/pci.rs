@@ -1,6 +1,6 @@
 // src/libcore/sys/pci.rs
 //
-// Basic PCI functionality for the LibertyOS kernel.
+// Basic PCI functionality for the MelaninOS kernel.
 
 
 /*

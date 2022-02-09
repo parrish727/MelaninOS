@@ -1,6 +1,6 @@
 // src/allocator/bump.rs
 //
-// LibertyOS' bump-allocator.
+// MelaninOS' bump-allocator.
 
 use alloc::alloc::{GlobalAlloc, Layout};
 use core::ptr;

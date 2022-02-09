@@ -1,8 +1,9 @@
-# THANK YOU
+# Gratitude
 
-Countless hours have been spent working on this project, and so many people have contributed to its development. Here are some of the people that team LibertyOS would like to thank for their work:
+Countless hours have been spent working on this project, and so many people have contributed to its development before us. We give gratitude to the team that developed this and allowed it to be available. Here are some of the people that team at LibertyOS we would like to give gratitude for their work:
 
-
+## LibertyOS
+Gratitude!
 ## Carol Nichols
 She contributed to the official book for the Rust programming language.
 
@@ -23,4 +24,4 @@ He contributed to the official book for the Rust programming language.
 Created MOROS, which is another Rust-based operating system. His OS has been very helpful for studying and learning how to work with Rust, and how to implement the features that LibertyOS has been in need of for a long time.
 
 
-### In addition to the aforementioned individuals, LOS would like to thank the members of the Discord group, the people over on the Rust subreddit, and the wonderful community that exists on Github!
+### In addition to the aforementioned individuals, MOS would like to give gratitude to the members of the Discord group, the people over on the Rust subreddit, and the wonderful community that exists on Github!

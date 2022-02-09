@@ -1,6 +1,6 @@
 // src/libcore/sys/sc/mod.rs
 //
-// Syscalls for LibertyOS.
+// Syscalls for MelaninOS.
 
 
 /*
